@@ -1,3 +1,7 @@
+"""
+This is a modified version of N-HITS, originally from https://github.com/Nixtla/neuralforecast, licensed under the Apache License 2.0.
+"""
+
 from typing import Tuple, Optional
 
 import numpy as np

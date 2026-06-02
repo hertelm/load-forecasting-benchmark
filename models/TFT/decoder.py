@@ -1,3 +1,7 @@
+"""
+This is a modified version of TFT, originally from https://github.com/Nixtla/neuralforecast, licensed under the Apache License 2.0.
+"""
+
 import torch.nn as nn
 from torch.nn import LayerNorm
 from models.TFT.modules import GRN, GLU, InterpretableMultiHeadAttention

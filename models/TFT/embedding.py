@@ -1,3 +1,7 @@
+"""
+This is a modified version of TFT, originally from https://github.com/Nixtla/neuralforecast, licensed under the Apache License 2.0.
+"""
+
 import torch
 from torch import nn, Tensor
 from typing import Optional

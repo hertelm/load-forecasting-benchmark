@@ -62,3 +62,8 @@ python main.py
 All settings are controlled via config files in the 'config' folder and can be overwritten by command line arguments.
 Use the argument `--help` to list all parameters.
 Results are logged using the weights and biases platform.
+
+## Licenses
+
+This repository contains a modified version of N-HITS and TFT, originally from https://github.com/Nixtla/neuralforecast
+licensed under the Apache License 2.0.
