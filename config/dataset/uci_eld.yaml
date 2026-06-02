@@ -1,0 +1,10 @@
+dataset_name: uci_eld
+data_directory: _data/uci_eld/
+data_name: uci_eld.pkl
+data_tz: UTC
+start: null
+end: null
+val_split: '2014-03-15'
+test_split: '2014-08-08'
+split_tz: UTC
+num_time_series: 287

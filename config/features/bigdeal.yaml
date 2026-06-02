@@ -1,0 +1,22 @@
+dyn_time_dict: {
+  'hour': 'sin_cos',
+  'month': 'sin_cos',
+  'weekday': 'sin_cos'
+}
+static_time_dict: null
+dyn_directory: _data/bigdeal/
+dyn_file_name: features.pkl
+dyn: {
+       "Temperature": "future",
+       "Temperature_1d": "future",
+       "Holiday": "future",
+}
+stat: null
+dyn_tz: UTC
+stat_tz: null
+stat_directory: null
+stat_file_name: null
+
+futr_feature_size: 9
+hist_feature_size: 0
+stat_feature_size: 0

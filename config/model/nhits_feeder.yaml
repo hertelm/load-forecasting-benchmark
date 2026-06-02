@@ -1,0 +1,24 @@
+model_name: "nhits"
+wandb_project: "nhits"
+
+stack_types: ["identity", "identity", "identity"]
+n_blocks: [2, 2, 2]
+mlp_units: [[1024, 1024], [1024, 1024], [1024, 1024]]
+n_pool_kernel_size: [8, 4, 1]
+n_freq_downsample: [180, 60, 1]
+pooling_mode: "MaxPool1d"
+interpolation_mode: "linear"
+dropout_prob_theta: 0.0
+activation: "ReLU"
+
+batch_size: 512
+epochs: 100
+lr: 0.00014435576119958674
+lr_scheduler: no_scheduler
+early_stopping: True
+early_stopping_patience: 10
+early_stopping_min_delta: 0
+optimizer: 'adamw'
+
+loss_function: 'mse'
+quantiles: [0.02, 0.15, 0.5, 0.85, 0.98]

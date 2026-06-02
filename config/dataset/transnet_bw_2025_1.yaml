@@ -1,0 +1,9 @@
+dataset_name: transnet_bw
+data_directory: _data/transnet_bw/
+data_name: TransnetBW_Actual_Total_Load.pkl
+data_tz: UTC
+start: null
+val_split: '2024-12-01'
+test_split: '2025-01-01'
+end: '2025-02-04 22:59:59'
+split_tz: UTC
