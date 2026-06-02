@@ -66,4 +66,4 @@ Results are logged using the weights and biases platform.
 ## Licenses
 
 This repository contains a modified version of N-HITS and TFT, originally from https://github.com/Nixtla/neuralforecast
-licensed under the Apache License 2.0.
+licensed under the Apache License 2.0 (see licenses/apache-license-nixtla.txt).
