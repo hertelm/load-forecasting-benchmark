@@ -1,0 +1,28 @@
+model_name: "cnn"
+model_class: "transformer"
+
+architecture: 'encoder'
+patch_size: 24
+conv_kernel_size: [7]
+conv_max_pooling: 1
+lstm_layers: 0
+num_layers: 0
+d_model: 1024
+n_heads: 1
+attention: 'full'
+max_pooling: 1
+dense_units: 512
+num_dense_layers: 1
+
+batch_size: 128
+epochs: 100
+lr: 0.00015732569361259232
+lr_scheduler: no_scheduler
+dropout: 0.09271018564427598
+early_stopping: True
+early_stopping_patience: 10
+early_stopping_min_delta: 0
+optimizer: 'adamw'
+
+loss_function: 'mse'
+quantiles: [0.1, 0.5, 0.9]

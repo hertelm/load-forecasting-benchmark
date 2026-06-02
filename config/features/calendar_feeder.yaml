@@ -1,0 +1,21 @@
+dyn_time_dict: {
+  'hour': 'sin_cos',
+  'month': 'sin_cos',
+  'weekday': 'sin_cos'
+}
+static_time_dict: null
+dyn_directory: _data/feeder_bw/
+dyn_file_name: feeder_features.pkl
+dyn_per_ts: True
+dyn: {
+       "holiday": "future",
+}
+stat: null
+dyn_tz: UTC
+stat_tz: null
+stat_directory: null
+stat_file_name: null
+
+futr_feature_size: 7
+hist_feature_size: 0
+stat_feature_size: 0

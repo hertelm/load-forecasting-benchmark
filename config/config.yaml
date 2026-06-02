@@ -1,0 +1,50 @@
+defaults:
+  - _self_
+  - dataset: feeder_bw
+  - model: transformer
+  - features: feeder_bw
+  - override hydra/hydra_logging: none  
+  - override hydra/job_logging: none
+
+output_directory: results/models/${model.model_name}/
+num_workers: 10
+pin_memory: True
+gpus: 1 #for now only tested with up to 4 gpus on 1 node using ddp
+strategy: auto # tested with ddp for multiple gpus
+save_predictions: True
+example_plot_mode: image
+
+scalers:
+  target:  standard   # options: "standard", "minmax", "none"
+  feature:  standard
+  static:   standard
+
+sample:
+  input_length: 168
+  target_length: 96
+  step_size: 1
+  window_size: 1
+
+model:
+  seed: 42
+  early_stopping: True
+  val_every_n_steps: null
+  lr_monitor: False
+  checkpointing: True
+  evaluate_end: False
+  wandb_project: ${dataset.dataset_name}
+  model_class: ${model.model_name}
+  wandb_name: ${now:%y%m%d-%H:%M}-${model.model_name}-${dataset.dataset_name}
+
+dataset:
+  num_time_series: 1
+
+features:
+  dyn_per_ts: False
+
+hydra:
+  job:
+    chdir: False
+  run:
+    dir: .
+  output_subdir: null

@@ -1,0 +1,24 @@
+dyn_time_dict: {
+  'hour': 'sin_cos',
+  'month': 'sin_cos',
+  'weekday': 'sin_cos'
+}
+static_time_dict: null
+dyn_directory: _data/uci_eld/
+dyn_file_name: uci_eld_features.pkl
+dyn: {
+       "Air_Temperature_2m": "future",
+       "Global_Horizontal_Irradiance": "future",
+       "Total_Precipitation": "future",
+       "Wind_Speed_10m": "future",
+       "Holiday": "future",
+}
+stat: null
+dyn_tz: UTC
+stat_tz: null
+stat_directory: null
+stat_file_name: null
+
+futr_feature_size: 11
+hist_feature_size: 0
+stat_feature_size: 0

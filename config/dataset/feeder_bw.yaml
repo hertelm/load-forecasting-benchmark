@@ -1,0 +1,10 @@
+dataset_name: feeder_bw
+data_directory: _data/feeder_bw/
+data_name: feeder_load.pkl
+data_tz: null
+start: null
+val_split: '2024-03-01'
+test_split: '2024-04-01'
+end: null
+split_tz: null
+num_time_series: 200

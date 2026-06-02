@@ -1,0 +1,22 @@
+dyn_time_dict: {
+  'hour': 'sin_cos',
+  'month': 'sin_cos',
+  'weekday': 'sin_cos'
+}
+static_time_dict: null
+dyn_directory: _data/load_data/transnet_bw/
+dyn_file_name: TransnetBW_Features.pkl
+dyn: {
+       "Holiday": "future",
+}
+stat: null
+dyn_tz: UTC
+stat_tz: null
+stat_directory: null
+stat_file_name: null
+feature_lookback: 168
+feature_lookahead: 24
+
+futr_feature_size: 7
+hist_feature_size: 0
+stat_feature_size: 0

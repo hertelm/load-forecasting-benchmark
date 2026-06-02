@@ -1,0 +1,28 @@
+model_name: "transformer"
+wandb_project: "transformer"
+
+architecture: 'encoder_decoder'
+patch_size: 1
+conv_kernel_size: 1
+conv_max_pooling: 1
+lstm_layers: 0
+num_layers: 2
+d_model: 128
+n_heads: 4
+attention: 'full'
+max_pooling: 1
+dense_units: 128
+num_dense_layers: 1
+
+batch_size: 128
+epochs: 100
+lr: 0.0001
+lr_scheduler: no_scheduler
+dropout: 0.1
+early_stopping: True
+early_stopping_patience: 5
+early_stopping_min_delta: 0
+optimizer: 'adamw'
+
+loss_function: 'mse'
+quantiles: [0.1, 0.5, 0.9]

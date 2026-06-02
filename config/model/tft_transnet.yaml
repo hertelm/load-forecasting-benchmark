@@ -1,0 +1,17 @@
+model_name: "tft"
+wandb_project: "tft"
+
+hidden_size: 32
+n_head: 1
+attn_dropout: 0.0
+
+batch_size: 128
+epochs: 100
+lr: 0.0004938882144370988
+dropout: 0.03878395648321789
+early_stopping: True
+early_stopping_patience: 10
+early_stopping_min_delta: 0
+optimizer: 'adamw'
+loss_function: 'mse'
+quantiles: [0.1, 0.5, 0.9]
